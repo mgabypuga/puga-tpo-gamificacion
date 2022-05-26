@@ -1,0 +1,564 @@
+/* Estilos Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    transition: all 0.5s;
+}
+
+/*Estilos Body*/
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-image:linear-gradient(
+        0deg, 
+        rgba(6, 33, 40, 0.8),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("/IMG/invasionFondo.png");
+    background-repeat: no-repeat;   
+    background-size: cover; 
+    background-position: center center;
+    padding-top: 70px;
+    margin-top: 10px;
+}
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/*Estilos Header*/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(37, 35, 35);
+    color: rgb(201, 198, 198);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:100;
+}
+
+/*Estilos del Menú*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 60px;
+    background-color: rgb(37, 35, 35);
+    transition: all 0.5s;
+}
+.nav a{
+    border: none;
+    text-decoration: none;    
+}
+.nav_menu{
+    display:flex;
+    list-style: none;  
+}
+.nav-menu-items{
+    font-family: 'Anek Odia', sans-serif;
+    text-transform: uppercase;
+    color: rgb(15, 209, 196);
+    margin: 18px 10px 0 10px;
+    width: max-content; 
+}
+.nav-menu-items:hover{
+    margin-top: 2px;
+    transition: 0.5s;
+}
+.nav-menu-link{
+    padding: 20px 5px; 
+}
+.logo img{
+    width: 150px;
+    line-height: 60px;
+    margin-top: -8px;
+    margin-left: 20px;
+}
+.nav_toggle{
+    color: rgb(15, 209, 196);
+    background: none;    
+    border: none;
+    font-size: 28px;    
+    cursor: pointer;  
+    padding: 0 35px;
+    line-height: 60px;
+    display: none;
+}
+
+/*Textos*/
+h2, h3, h4{
+    text-align: center;
+}
+h1{
+    color: rgb(239, 203, 43);
+    font-size: 5.5vw;     
+}
+h2{
+    color: rgb(15, 209, 196);
+    font-size: 4.2vw; 
+    margin-bottom: 10px;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 2.8vw; 
+    margin-bottom: 10px;
+}
+h4{
+    color: rgb(239, 203, 43);
+    font-size: 2.8vw; 
+    margin-bottom: 10px;
+}
+h6{
+    color: rgb(239, 203, 43);
+    font-size: 1.8vw; 
+    margin-bottom: 10px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 1.8vw; 
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/*Otros elementos*/
+hr{    
+    margin-bottom: 3%;   
+}
+video{
+    width: 90%;
+}
+a{
+    font-size: 1.9vw;
+    color: rgb(15, 209, 196);
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 3px 4px;
+    margin-top: 5px;
+    border: 1.5px solid rgb(15, 209, 196);     
+}
+a[name]{
+    border: none;
+    color: transparent;  
+    margin: 0;
+}
+a:hover{
+    background: rgba(25, 74, 80, 0.8);
+}
+
+/*Contenedores*/
+#contenedor-fondos{
+    background-color: rgba(1, 8, 8, 0.237);   
+    padding: 20px 0; 
+    margin-bottom: 0;
+}
+.contenedor{
+    width: 90%;
+    margin:auto;    
+}
+.contenedor_videos{
+    overflow:hidden;
+    width: 90%;
+    height:0;
+    padding-bottom:70%; 
+    position:relative;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+}
+.audio iframe{
+    height: 168px;
+    position: relative;
+}
+
+/*Primera Sección*/
+#banner{
+    margin: -50px 0 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 93vh;
+    background-image:linear-gradient(
+        0deg, 
+        rgba(17, 87, 104, 0.3),
+        rgba(0,0,0,0.1)
+    ),
+    url("/IMG/bannerPortada.jpg");
+    background-repeat: no-repeat;   
+    background-size: cover; 
+    background-position: center center;
+}
+#banner .contenedor{
+    padding-top: 5em;
+    position: absolute;
+}
+
+/*Segunda Sección*/
+#alerta{
+    position: relative;
+    text-align: center;
+}
+#alerta h2{
+    padding-top: 5vh;
+}
+
+/*Tercera y Sexta Sección*/
+#info .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+.contenedor_flex{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; 
+    padding: 10px;    
+    margin: 5px;    
+}
+.art{
+    margin: 5px;
+    padding: 15px;    
+    width: 400px;
+    text-align: center;    
+}
+button.acordeon {
+    font-size: 1.7vw;
+    color: rgb(15, 209, 196);
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(37, 35, 35);
+    border: 1.5px solid rgb(15, 209, 196);
+    transition: 0.4s;
+}
+div.desplegable {
+    padding: 15px 18px;
+    background-color: rgba(37, 35, 35, 0.4);
+    max-height: 0;
+    overflow-y: scroll;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+div.desplegable.show {
+    opacity: 1;
+    max-height: 600px;
+}
+
+/*Cuarta Sección*/
+#capacitacion{
+    position: relative;
+    text-align: center; 
+    margin-top: 20px;   
+}
+#capacitacion h2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#capacitacion a{
+    border: none;    
+    margin: 0;
+}
+#capacitacion a img{
+    width: 10vw;    
+}
+
+/*Quinta Sección*/
+#colaboracion{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+#colaboracion h2{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+}
+
+/*Septima Sección*/
+#codigos_alterados{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+#codigos_alterados h2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#codigos_alterados ul{
+    margin: 4% 0;        
+}
+#codigos_alterados li{
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw; 
+    margin: 2% 15% 2% 15%;    
+    background-color: rgb(183, 177, 177);
+    list-style-type: none;
+}
+
+/*Octava Sección*/
+#test{
+    position: relative;
+    text-align: center;
+}
+#test h2{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+}
+
+/*Formulario*/
+#contactos{
+    padding-top: 80px;
+}
+.formulario{
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(255,255,255,0.1);
+    position: relative;
+}
+.formulario h2{
+    margin-top: 5px;    
+}
+.formulario h4{    
+    padding-bottom: 30px;
+}
+.input_form, .label_form,.submit_form, .area_form{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    color: rgb(44, 161, 161);
+}
+.input_form, .area_form{
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.1);  
+    background: rgba(255,255,255,0.1);
+}
+.input_form:focus + .label_form{
+    margin-top: -125px;
+}
+.label_form{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -10;
+    color: rgba(126, 231, 231, 0.6);
+    transition: all 0.5s;
+}
+.submit_form{
+    background: rgba(128, 120, 120, 0.4);
+    color: rgb(44, 161, 161);
+    font-weight: 400;
+    padding: 7px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px rgba(255,255,255,0.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(30, 30, 30, 0.7);
+}
+.submit_form:hover{
+    background: rgba(28, 118, 132, 0.7);
+    color: rgb(13, 14, 15);
+    width: 28%;
+}
+.area_form{
+    margin-top: 80px;
+}
+#label_mensaje{
+    margin-top: 5px;
+}
+.fijar{
+    margin-top: -125px;
+}
+
+/*Footer*/
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(37, 35, 35);    
+    width: 100%;
+}
+.copyright {
+    font-size: 7px;
+    text-align: center;
+    color: rgb(201, 198, 198);
+    padding-top: 20px;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    width: 100%        
+}
+.redes a{
+    border: none; 
+    font-size: 20px;   
+}
+.redes a:hover{
+    font-size: 18px;    
+    background-color: transparent;
+    color: rgb(11, 169, 158);
+    transition: all 0.25s;
+}
+
+/*----------------------------------------------------*/
+/*Media Queries*/
+
+@media (max-width: 1023px){
+    .nav_menu{
+        flex-direction: column;
+        background-color: rgba(1, 8, 8,0.85);  
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: flex-end;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-items{
+        margin: 15px 0;
+    }
+    .nav-menu-items a{
+        margin: 5px 30px;
+        font-size: 0.8em;
+    }
+    .nav-menu-items a:hover{
+        transition: 0.5s;
+        color: rgb(239, 203, 43);
+        background: none;
+    }
+    .nav_toggle{
+        display: block;        
+    }
+    .nav_menu_visible{
+        left: 0;
+    }
+}
+@media (min-width: 768px){
+    h2{        
+        font-size: 3.5vw;               
+    }
+    h3{        
+        font-size: 2.5vw;         
+    }
+    h4{        
+        font-size: 2.5vw;         
+    }
+    h6{        
+        font-size: 2vw;         
+    }
+    p{        
+        font-size: 1.6vw;         
+    }
+    a{
+        font-size: 1.8vw;  
+    }  
+    button.acordeon{
+        font-size: 1.5vw;
+    }
+}
+@media (min-width: 992px){  
+    .art{
+        width: 600px;
+    }  
+    h2{        
+        font-size: 2.5vw;
+    }
+    h3{        
+        font-size: 1.5vw;         
+    }
+    h4{        
+        font-size: 1.5vw;         
+    }
+    h6{        
+        font-size: 1.2vw;         
+    }
+    p{        
+        font-size: 1.3vw;         
+    }
+    a{
+        font-size: 1.4vw;  
+    }   
+}   
+@media (min-width: 1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        background-color: transparent;
+        padding-right: 10px;
+    }
+    .menu a{
+        border: none;
+        font-size: 12px;
+        text-align: center;
+        padding: 16px 7px;         
+    }
+    .menu a:hover{
+        background:rgba(3, 80, 90, 0.8); 
+        height: 60px; 
+        margin-top: 0;
+    }
+    header label{
+        display: none;        
+    }
+    .contenedor{
+        width: 80%;
+        margin:auto;    
+    }
+    .art{
+        width: 40%;
+    }
+    h2{        
+        font-size: 2vw;
+    }
+    h3{        
+        font-size: 1.2vw;         
+    }
+    h4{        
+        font-size: 1.2vw;         
+    }
+    h6{        
+        font-size: 1 vw;         
+    }
+    p{        
+        font-size: 0.9vw;         
+    }
+    a{
+        font-size: 1vw;  
+    }     
+    button.acordeon{
+        font-size: 1vw;
+    } 
+}

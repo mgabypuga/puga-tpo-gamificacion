@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/70fa5ca4d6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Roboto+Mono&display=swap');</style>
+    <script src="/JS/script.js" defer></script>
+    <link rel="icon" href="IMG/favicoTecnoComu.png">
+    <title>Invasión Robot</title>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="header">
+            <nav class="nav">
+                <a href="#"  class="logo"><img src="/IMG/logoChicoClaro.png" alt="Logo Tecno-Comunicación"></a> 
+                <button class="nav_toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav_menu ">
+                    <li class="nav-menu-items"><a href="#a-alerta"  class="nav-menu-link"><i class="fa-solid fa-robot"></i> Mundo en Alerta</a></li>
+                    <li class="nav-menu-items"><a href="#a-capacitacion"  class="nav-menu-link"><i class="fa-solid fa-robot"></i> Tiempo de Capacitación</a></li>
+                    <li class="nav-menu-items"> <a href="#a-colaboracion"  class="nav-menu-link"><i class="fa-solid fa-robot"></i> Colaborar con la Causa</a></li>
+                    <li class="nav-menu-items"><a href="#a-codigos_alterados"  class="nav-menu-link"><i class="fa-solid fa-robot"></i> Códigos Alterados</a></li>
+                    <li class="nav-menu-items"> <a href="#a-test"  class="nav-menu-link"><i class="fa-solid fa-robot"></i> Posibilidad de Ascenso</a></li>
+                    <li class="nav-menu-items"><a href="#a-contactos"  class="nav-menu-link"><i class="fa-solid fa-robot"></i> Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="banner">
+            <div class="contenedor">
+                <h1>Invasión Robot</h1>
+                <h3>¿Qué está sucediendo?</h3>
+                <a href="#a-alerta">¡Averigüémoslo!</a>                
+            </div>
+        </section>
+        <section id="alerta">
+            <a name="a-alerta"></a> 
+            <h2>El Mundo en Alerta</h2>
+            <div class="contenedor">
+                <video src="/VIDEOS/TeaserIntroduccionArduino.mp4" controls></video>
+                <p>Tal como lo anuncia el video, esperamos que formes parte de la "Sede de la Resistencia". Para ello, hacé clic en el boton "Acceso a la Info" de aquí abajo y accede a la información que debemos analizar. Como constancia del cumplimiento de tu labor, solicitan el envío de un mapa conceptual breve que muestre los datos más importantes que hayas encontrado. Tu líder te indicará el equipo al que fuiste asignado.</p> 
+            </div>
+        </section>
+        <section id="info">
+            <div class="contenedor">
+                <button class="acordeon"><i class="fa-solid fa-circle-info" style="display:inline-block;margin-bottom:-7px;"></i> Acceso a la Info</button>
+                <div class="desplegable">
+                    <h2>Información Importante</h2>
+                    <div class="contenedor_flex">
+                        <article class="art art1">
+                            <h4>CONSTANTES</h4>
+                            <img src="IMG/constantes.png">
+                            <p>Son espacios de memoria que conservan datos que se van a mantener iguales durante toda la ejecución del programa. Dependiendo del lenguaje de programación que se esté usando, su declaración variará. En el IDE de Arduino, por ejemplo, se declararan así: la palabra reservada "const", luego el tipo de dato, seguidamente el nombre que se haya elegido para esa constante, luego el signo = (que sirve para asignarle un dato) y el dato en sí.</p>
+                        </article>
+                        <article class="art art2">
+                            <h4>VARIABLES</h4>
+                            <img src="IMG/variables.png">
+                            <p>También serán espacios de memoria que almacenan datos, pero en este caso serán datos que pueden ir variando durante la ejecución del programa. Para declararlas en el IDE de Arduino, se hace del siguiente modo: se inicia directamente con la definición del tipo de dato, luego el nombre de la variable, el signo = de asignación y el dato que contiene. </p>
+                        </article>  
+                    </div>
+                    <article>
+                        <hr>
+                        <h4>VIDEO AMPLIATORIO</h4>
+                        <p>IMPORTANTE: Tanto las variables como las constantes pueden llevar cualquier nombre, salvo algunas excepciones como son el uso de palabras reservadas del lenguaje del que se trate o restricciones propias de cada lenguaje como signos, números, etc. A pesar de ello, se sugiere como una buena costumbre de programación, que se les de un nombre relacionado con el dato que contienen. Esta práctica es muy útil para su posterior identificación.</p> 
+                        <div class="contenedor_videos">
+                            <iframe src="https://www.youtube.com/embed/Z9KYg_0rpF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <hr> 
+                    </article>
+                    <article>   
+                        <h6>¡Cumple con tu tarea como pasante! Próximamente habrá novedades.</h6>
+                         <a href="https://www.mindmup.com/" target="_blank"><i class="fa-solid fa-network-wired" style="display:inline-block;margin-bottom:-7px;"></i> Crear Mapa Conceptual</a>
+                        <a href="https://drive.google.com/drive/folders/1I-kE5HOncuIsBB4KQy4pA1SjLF5h9rJU?usp=sharing" target="_blank"><i class="fa-solid fa-paper-plane" style="display:inline-block;margin-bottom:-7px;"></i> Buzón de Entregas</a>      
+                    </article>
+                </div> 
+            </div>
+            <a name="a-capacitacion"></a>
+        </section>
+        <section id="contenedor-fondos">        
+            <section id="capacitacion">            
+                <h2>Capacitación Mensual para Programadores de la Salvación</h2>
+                <div class="contenedor">
+                    <p>A partir de esta semana y por el período de un mes, los programadores de la salvación deberán asistir a una capacitación sobre el simulador de montaje y programación de circuitos Tinkercad. Para poder acceder, deberán registrarse en la "clase" que les corresponda, de acuerdo al turno en el que desempeñan sus labores.</p>
+                    <a href="https://www.tinkercad.com/joinclass/Y7GYX727943T"><img src="/IMG/programadoresTM.png" alt="Logo Turno Mañana"></a>   
+                    <a href="https://www.tinkercad.com/joinclass/I3AKR26KZZDU"><img src="/IMG/programadoresTT.png" alt="Logo Turno Tarde"></a>   
+                </div>
+            </section>
+            <a name="a-colaboracion"></a>
+        </section>
+        <section id="colaboracion">
+            <h2>Colaborar con la causa</h2>
+            <div class="contenedor">
+                <p>Para colaborar con los nuevos aspirantes al ingreso a los "Programadores de la Salvación", la sede solicita el diseño de una presentación digital en la que se explique de forma visualmente atractiva, los concpetos básicos sobre estructuras de programación. <br> <br> Haciendo clic en el enlace de aquí abajo, encontrarás una serie de presentaciones sobre diversas nociones de programación en Arduino. Analiza la información, crea la presentación junto a tu equipo y envíala mediante el buzón de entregas.</p>
+            </div>
+        </section>
+        <section id="info">
+            <div class="contenedor">
+                <button class="acordeon"><i class="fa-solid fa-circle-info" style="display:inline-block;margin-bottom:-7px;"></i> Acceso a la Info</button>
+                <div class="desplegable">
+                    <h2>Estructuras en Programación</h2>
+                    <p>Las estructuras en programación, son las formas en que se dispone el código. Básicamente hay 3: secuenciales, repetitivas y condicionales. Por ahora sólo veremos las secuenciales y las repetitivas.</p>      
+                    <div class="contenedor_flex">
+                        <article class="art art3">                    
+                            <h4>ESTRUCTURAS SECUENCIALES</h4>
+                            <p>Las estructuras secuenciales son las más simples, donde una instrucción sucede a la otra, en una secuencia ordenada, de forma sucesiva, desde el inicio del programa hasta la salida del proceso. La salida de cada un instrucción da paso a la entrada de la otra, es decir, no puede ejecutarse una acción si no ha finalizado la anterior.</p>
+                            <video src="/VIDEOS/Estructuras_ Secuenciales.mp4" controls></video>         
+                        </article>
+                        <article class="art art4">
+                            <h4>ESTRUCTURAS REPETITIVAS</h4>
+                            <p>Si bien hay distintas formas de estructuras repetitivas comencemos por entender para qué sirven. Se utilizan cuando hay que repetir una serie de instrucciones una cierta cantidad de veces. Esto permite mejorar el código al acortarlo, evitándonos codificar muchas veces una misma acción que se sucede repetidamente. También se les llama ciclos, loops o bucles.</p>
+                            <video src="/VIDEOS/Estructuras_ Repetitivas.mp4" controls></video>
+                        </article>
+                    </div>
+                    <article>
+                        <h6>¡Cumple con tu segunda tarea! Con esta labor dejarás de ser un pasante y te convertirás en programador Jr.</h6>
+                        <a href="https://www.canva.com/" target="_blank"><i class="fa-solid fa-person-chalkboard" style="display:inline-block;margin-bottom:-7px;"></i> Crear Presetación Digital</a>
+                        <a href="https://drive.google.com/drive/folders/1I-kE5HOncuIsBB4KQy4pA1SjLF5h9rJU?usp=sharing" target="_blank"><i class="fa-solid fa-paper-plane" style="display:inline-block;margin-bottom:-7px;"></i> Buzón de Entregas</a>
+                    </article>
+                </div>  
+            </div>
+            <a name="a-codigos_alterados"></a>
+        </section>
+        <section id="contenedor-fondos">  
+            <section id="codigos_alterados">
+                <h2>Códigos Alterados</h2>
+                <div class="contenedor">
+                    <h6>Escuchemos este compacto de último momento! Lo que está pasando es alarmante!!! Debemos actuar rápido!!!</h6>                    
+                    <div class="audio">
+                        <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/684773101%3Fsecret_token%3Ds-TiVNB&amp;color=%23b30d0d&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+                    </div>
+                    <p>Los robots han alterado gravemente los programas de los semáforos. Por un lado, hicieron pequeños retoques al lenguaje de programación y por otro, dejaron cambiaron la secuencia del funcionamiento.</p>
+                    <article class="art1">
+                        <hr>
+                        <h4>MISIÓN DE EQUIPO</h4>
+                        <p>Descargando el archivo "CODIGOS_ALTERADOS" encontrarán el programa del semáforo alterado por los robots. En esta misión de equipo sólo tendrán que copiar el código en el IDE Arduino y reparar las alteraciones que hicieron los robots. Para ayudarlos en su tarea, obtuvimos ciertas pistas: </p>
+                        <ul>
+                            <li>En el espacio de declaración de variables hay 1 sola alteración</li>
+                            <li>En el "void setup" hay 2 errores</li>
+                            <li>En el "void loop" hay 3 errores</li>
+                        </ul>
+                        <p>Una vez que terminen, manden el archivo.ico a la sede de la resistencia, subiéndolo a su carpeta de equipo. Para acceder a la carpeta deben hacer clic en el ícono de enlace que aparece más abajo.</p>  
+                        <a href="DOC/CODIGOS_ALTERADOS.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down" style="display:inline-block;margin-bottom:-7px;"></i> Descargar el Archivo</a>   
+                        <br><br>   
+                    </article>
+                    <article class="art2">
+                        <hr>
+                        <h4>MISIÓN INDIVIDUAL</h4>
+                        <p>Haciendo clic en el enlace de aquí abajo, encontrarás desordenadas las secuencias de funcionamiento del semáforo. Tu misión consistirá en ordenarlas lo más rápidamente posible. Pista: la imagen con una x roja, va última.</p>
+                        <h6>¡IMPORTANTE! COLOCÁ TU NOMBRE COMPLETO ANTES DE COMENZAR!</h6>
+                        <a href="https://wordwall.net/play/19084/393/330?ref=embed-icon" target="_blank"><img src="//az779572.vo.msecnd.net/res/content/images/global/icon.png|1omhwxl4ub6c7qbjdg8bmyw2.png" width="24" height="24" style="display:inline-block;margin-bottom:-3px;"/> Secuencia del Semáforo</a>
+                        <br><br>
+                        <hr>
+                    </article>
+                </div>
+            </section>
+            <a name="a-test"></a>        
+        </section>
+        <section id="test">            
+            <h2>Posibilidad de Ascenso</h2>
+            <div class="contenedor">
+                <p>Durante la jornada del día de hoy, los programadores de la salvación deberán rendir un examen de idoneidad para poder poder ascender de categoría dentro de la sede de de la resistencia. Para ello, luego de tomar contacto con los componentes Arduino y manteniendo a mano todas las actividades y materiales teóricos trabajados, cada equipo tendrá que resolver la "ruleta de palabras" que aparece más abajo, en el menor tiempo y con la mínima cantidad de errores posibles. <br>Es importante, para registrar su participación, que antes de comenzar el test se presione la opción "Pulsa aquí para identificarte" que aparece encima del botón "Comenzar". Allí se deberá ingresar el nombre del equipo.</p>   
+                <a href="https://es.educaplay.com/recursos-educativos/4717172-introduccion_a_la_programacion.html" target="_blank"><img src="IMG/icono_educaplay.png" width="24px" height="24px" style="display:inline-block;margin-bottom:-3px;"/> Test de Aptitud</a>
+            </div>           
+            <a name="a-contactos"></a>
+        </section>
+        <section id="contenedor-fondos">
+            <section id="contactos">
+                <div class="contenedor">
+                    <button class="acordeon"><i class="fa-solid fa-address-card" style="display:inline-block;margin-bottom:-7px;"></i>  Acceso al Formulario de Contactos</button>
+                    <div class="desplegable">
+                        <form action="mailto:mgabypuga@gmail.com" method="post" enctype="text/plain" class="formulario" onsubmit="return validar();">
+                            <h2> Formulario </h2>
+                            <h4>Contactar a la Sede de la Resistencia</h4>
+                            <input type="text" id="nombre" class="input_form">
+                            <label for="" class="label_form">Nombre</label>
+                            <input type="text" id="apellido" class="input_form">
+                            <label for="" class="label_form">Apellido</label>
+                            <input type="text" id="turno" class="input_form">
+                            <label for="" class="label_form">Turno</label>
+                            <input type="email" id="correo" class="input_form">
+                            <label for="" class="label_form">Correo</label>
+                            <label for="" id="label_mensaje" class="label_form">Mensaje</label>
+                            <textarea name="textarea" id="mensaje" class="area_form" rows="10" cols="50"></textarea>
+                            <input type="submit" value="ENVIAR" class="submit_form">            
+                        </form>   
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contenedor">
+            <p  class="copyright">TECNO COMUNICACIÓN - Contenidos Educativos para el Nivel Secundario. &copy; 2022. <br>Realizado por Gaby Puga.</p>
+            <div class="redes">
+                <div><a href="https://www.instagram.com/profegabypuga/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></div>
+                <div><a href="https://twitter.com/profegabypuga" target="_blank"><i class="fa-brands fa-twitter-square"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
